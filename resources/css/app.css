@@ -2563,7 +2563,7 @@ html[data-theme="custom"]:not(.dark) :is(.application-settings-section, .applica
 
 .resource-heading-tabs-control:focus-visible .resource-heading-tabs-control-icon {
     box-shadow:
-        0 0 0 2px color-mix(in srgb, var(--color-coollabs, #6b16ed) 45%, transparent),
+        0 0 0 2px color-mix(in srgb, var(--color-coollabs, #ff7a1a) 45%, transparent),
         0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
@@ -6798,7 +6798,7 @@ html.dark:not([data-theme="custom"]) :is(.app-sidebar, .mobile-sidebar-sheet) na
 
 /* Sidebar account menu: the purple tint of the sidebar it opens from. */
 html.dark:not([data-theme="custom"]) .listbox-panel.top-user-menu-panel-sidebar {
-    background: color-mix(in oklab, #6b16ed 10%, var(--coollabs-elevated));
+    background: color-mix(in oklab, #ff7a1a 10%, var(--coollabs-elevated));
     border-color: rgb(163 145 255 / 0.22);
 }
 

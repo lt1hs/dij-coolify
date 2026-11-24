@@ -59,7 +59,7 @@ function createApplicationTerminalTheme(accent, colors = {}) {
 }
 
 function customThemeAccent() {
-    const color = localStorage.getItem('themeColor') || '#6b16ed';
+    const color = localStorage.getItem('themeColor') || '#ff7a1a';
 
     if (!/^#[0-9a-f]{6}$/i.test(color)) {
         return '#7c3aed';
