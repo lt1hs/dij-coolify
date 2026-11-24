@@ -13,7 +13,7 @@
             --hairline: #d4d4d4;
             --text: #171717;
             --subtle: #737373;
-            --accent: #6b16ed;
+            --accent: #ff7a1a;
         }
 
         @media (prefers-color-scheme: dark) {

@@ -32,7 +32,7 @@ it('falls back to the default theme color when the stored color is not hex', fun
     expect($result)->toBe([
         'base' => 'oklch(49.65% 0.2709 289.33)',
         'foreground' => 'oklch(100% 0 0)',
-        'stored' => '#6b16ed',
+        'stored' => '#ff7a1a',
         'shorthand' => 'oklch(100.00% 0.0000 89.88)',
         'rgb' => 'oklch(49.65% 0.2709 289.33)',
         'oklch' => 'oklch(100% 0 0)',
