@@ -50,11 +50,11 @@
     --color-coollabs-300: oklch(38.04% 0.2031 290.47);
     /* coolLabs brand purple. Primary actions, focus, and active navigation
        use these in both themes. Warning yellow is not an accent. */
-    --color-brand: #6b16ed;
-    --color-brand-hover: #7317ff;
-    --color-brand-press: #5a12c7;
-    --color-brand-depth: #4a0fa3;
-    --color-brand-light: #a391ff;
+    --color-brand: #ff7a1a;
+    --color-brand-hover: #ff8c3d;
+    --color-brand-press: #e56a10;
+    --color-brand-depth: #b8540a;
+    --color-brand-light: #ffb07a;
     --color-coolgray-100: oklch(20.9% 0 0);
     --color-coolgray-200: oklch(24.35% 0 0);
     --color-coolgray-300: oklch(26.03% 0 0);
@@ -80,8 +80,8 @@
     /* Tertiary text. Raised from #6e6e74 (3.78:1 on base, failed WCAG AA)
        to #7e7e84 so 13-14px text clears 4.5:1 on the dark surface ladder. */
     --color-fg-faint: oklch(59.31% 0 0);
-    --color-accent: oklch(49.65% 0.2709 289.33);
-    --color-accent-foreground: oklch(100.0% 0 0);
+    --color-accent: #ff7a1a;
+    --color-accent-foreground: #0a0a0b;
     --color-hairline: oklch(100.0% 0 0 / 0.08);
     --color-nav-text: oklch(43.86% 0 0);
     --color-nav-muted: oklch(51.03% 0 0);
