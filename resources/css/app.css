@@ -266,7 +266,7 @@ select,
     --chart-status-5xx: #dc2626;
 
     /* KPI sparkline accent for Bandwidth (violet — distinct from the status hues). */
-    --chart-spark-bandwidth: #7c3aed;
+    --chart-spark-bandwidth: #ff7a1a;
 
     /* Sequential 5-step geo ramp (low -> high traffic) + neutral empty. */
     --chart-geo-1: #3b82f6;
@@ -284,7 +284,7 @@ select,
     --chart-status-4xx: #f59e0b;
     --chart-status-5xx: #ef4444;
 
-    --chart-spark-bandwidth: #a78bfa;
+    --chart-spark-bandwidth: #ffb07a;
 
     --chart-geo-1: #2563eb;
     --chart-geo-2: #3b82f6;
@@ -1375,7 +1375,7 @@ html:not(.dark) .application-console-shell[data-console-theme="system"] .termina
        every light surface above white. Dark stays 70.8% (already passes). */
     --coollabs-subtle: oklch(50% 0 0);
     /* Border of brand fills and the text on them. A custom theme overrides both. */
-    --color-brand-ring: #8a4dff;
+    --color-brand-ring: #ff9a4d;
     --color-brand-foreground: #fff;
 }
 
@@ -1386,7 +1386,7 @@ html:not(.dark) .application-console-shell[data-console-theme="system"] .termina
     /* Cards sit one step above the #0a0a0a canvas. The top bar uses the canvas,
        not this color. The sidebar uses --color-sidebar. */
     --color-card: #121212;
-    --color-sidebar: #120e1a;
+    --color-sidebar: #08080a;
     /* Dark surface ladder in hex (sRGB), not oklch: oklch lightness compresses
        to near-black below ~15%, so oklch(15%) rendered as sRGB 11 and cards
        could not lift off the content canvas (sRGB 10). These give clear,
@@ -6756,8 +6756,8 @@ html.dark:not([data-theme="custom"]) .app-sidebar nav.sidebar-nav,
 html.dark:not([data-theme="custom"]) .mobile-sidebar-sheet [role="dialog"] {
     background-image: linear-gradient(180deg, rgb(255 122 26 / 0.09), transparent 520px);
     border-right-color: rgb(255 176 122 / 0.10);
-    --color-nav-text: oklch(80% 0.02 300);
-    --color-nav-muted: oklch(58% 0.04 300);
+    --color-nav-text: oklch(80% 0.01 75);
+    --color-nav-muted: oklch(58% 0.015 75);
 }
 
 /* Same color as the top of the sidebar gradient, so the brand and sidebar read as one surface. */
@@ -6789,7 +6789,7 @@ html.dark:not([data-theme="custom"]):where(:not([data-nav-items="flat"])) :is(.a
 html.dark:not([data-theme="custom"]):where(:not([data-nav-items="flat"])) .app-sidebar nav.sidebar-collapsed .menu-search.menu-item .menu-item-icon {
     border-color: rgb(255 176 122 / 0.13);
     background: rgb(255 122 26 / 0.07);
-    color: #b9adff;
+    color: #ffb07a;
 }
 
 html.dark:not([data-theme="custom"]) :is(.app-sidebar, .mobile-sidebar-sheet) nav:not(.sidebar-collapsed) .nav-section {
@@ -7157,4 +7157,38 @@ html.dark .project-card-stats-dot {
 /* A page menu's own "Back to ..." item: the main sidebar copy has the back row instead (components/main-nav-menu). */
 .nav-context-menu [data-page-only] {
     display: none !important;
+}
+
+/* DIJ-LABS design language (matches dij-labs.com): flat, sharp corners, hairline
+   borders, Jura wordmark with wide tracking, warm near-black surfaces. */
+@theme {
+    --radius-xs: 2px;
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --radius-lg: 6px;
+    --radius-xl: 8px;
+    --radius-2xl: 10px;
+}
+
+.dij-wordmark {
+    font-family: 'Jura', 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+h1, h2, .dij-heading {
+    font-family: 'Jura', 'IBM Plex Sans Arabic', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    z-index: 9999;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }

@@ -147,7 +147,7 @@ $serverListboxOptions = array_merge(
                         @include('livewire.traffic._sparkline', [
                             'id' => $chartId.'-spark-memory',
                             'initial' => $chartData['memSpark'] ?? [],
-                            'color' => '#8b5cf6',
+                            'color' => '#ff7a1a',
                             'categories' => $chartData['sparkCategories'] ?? [],
                             'event' => 'refreshChartData-'.$chartId,
                             'key' => 'memSpark',

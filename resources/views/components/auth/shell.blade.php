@@ -7,7 +7,7 @@
     <div class="auth-shell-content">
         <div class="auth-card">
             <div class="auth-card-heading">
-                <h1>{{ $title }}</h1>
+                <img src="/dij-logo.png" alt="" class="mb-3 size-9" /><h1 class="dij-wordmark !text-lg">{{ $title }}</h1><small class="block text-[10px] tracking-[0.25em] text-fg-faint">AI INFRASTRUCTURE</small>
                 @if ($description)
                     <p>{{ $description }}</p>
                 @endif

@@ -62,7 +62,7 @@ function customThemeAccent() {
     const color = localStorage.getItem('themeColor') || '#ff7a1a';
 
     if (!/^#[0-9a-f]{6}$/i.test(color)) {
-        return '#7c3aed';
+        return '#ff7a1a';
     }
 
     const channels = color.match(/[a-f\d]{2}/gi).map((channel) => (
@@ -86,7 +86,7 @@ function createSystemTerminalTheme() {
         green: '#15803d',
         yellow: '#a16207',
         blue: '#2563eb',
-        magenta: '#9333ea',
+        magenta: '#ff3d6e',
         cyan: '#0e7490',
         white: '#52525b',
         brightBlack: '#71717a',

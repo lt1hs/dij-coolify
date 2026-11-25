@@ -14,7 +14,7 @@
         --sth-scrollbar-track: rgba(0, 0, 0, .06);
         --sth-scrollbar-thumb: #a1a1aa;
         --sth-livewire: #0284c7;
-        --sth-xhr: #9333ea;
+        --sth-xhr: #ff3d6e;
         --sth-document: #4d7c0f;
     }
 
