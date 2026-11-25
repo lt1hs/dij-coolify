@@ -43,11 +43,11 @@
        values in .dark. */
     --color-severity-high: oklch(56% 0.135 50);
     --color-severity-medium: oklch(55% 0.1 235);
-    --color-coollabs-50: oklch(96.33% 0.0206 301.15);
-    --color-coollabs: oklch(49.65% 0.2709 289.33);
-    --color-coollabs-100: oklch(52.34% 0.287 289.16);
-    --color-coollabs-200: oklch(43.76% 0.2369 289.82);
-    --color-coollabs-300: oklch(38.04% 0.2031 290.47);
+    --color-coollabs-50: #fff1e6;
+    --color-coollabs: #ff7a1a;
+    --color-coollabs-100: #ff8c3d;
+    --color-coollabs-200: #e56a10;
+    --color-coollabs-300: #b8540a;
     /* coolLabs brand purple. Primary actions, focus, and active navigation
        use these in both themes. Warning yellow is not an accent. */
     --color-brand: #ff7a1a;
@@ -1458,7 +1458,7 @@ html[data-theme="custom"] {
     --t-bg: var(--theme-bg);
     --t-text: var(--theme-text);
     --t-light: var(--theme-light);
-    --theme-base-color: oklch(49.65% 0.2709 289.33);
+    --theme-base-color: #ff7a1a;
     --theme-bright-color: color-mix(in srgb, var(--theme-base-color) 85%, oklch(100% 0 0));
     --theme-scrollbar-thumb: color-mix(in srgb, var(--theme-bright-color) 70%, var(--theme-accent-foreground));
     /* Accent text and icons on the page. applyCustomTheme() computes a color with
@@ -6754,56 +6754,56 @@ html.dark .app-sidebar .menu-item:not(:hover):not(:focus-visible):not(.menu-item
    tiles, text, and edges. A custom theme keeps the neutral rules above. */
 html.dark:not([data-theme="custom"]) .app-sidebar nav.sidebar-nav,
 html.dark:not([data-theme="custom"]) .mobile-sidebar-sheet [role="dialog"] {
-    background-image: linear-gradient(180deg, rgb(107 22 237 / 0.09), transparent 520px);
-    border-right-color: rgb(163 145 255 / 0.10);
+    background-image: linear-gradient(180deg, rgb(255 122 26 / 0.09), transparent 520px);
+    border-right-color: rgb(255 176 122 / 0.10);
     --color-nav-text: oklch(80% 0.02 300);
     --color-nav-muted: oklch(58% 0.04 300);
 }
 
 /* Same color as the top of the sidebar gradient, so the brand and sidebar read as one surface. */
 html.dark:not([data-theme="custom"]) .app-topbar-brand {
-    background-image: linear-gradient(rgb(107 22 237 / 0.09), rgb(107 22 237 / 0.09));
-    border-right-color: rgb(163 145 255 / 0.10);
+    background-image: linear-gradient(rgb(255 122 26 / 0.09), rgb(255 122 26 / 0.09));
+    border-right-color: rgb(255 176 122 / 0.10);
 }
 
 html.dark:not([data-theme="custom"]) :is(.app-sidebar, .mobile-sidebar-sheet) .menu-search {
-    background-color: rgb(163 145 255 / 0.06) !important;
-    box-shadow: inset 0 0 0 1px rgb(163 145 255 / 0.10) !important;
+    background-color: rgb(255 176 122 / 0.06) !important;
+    box-shadow: inset 0 0 0 1px rgb(255 176 122 / 0.10) !important;
 }
 
 html.dark:not([data-theme="custom"]) :is(.app-sidebar, .mobile-sidebar-sheet) .menu-search:hover {
-    background-color: rgb(163 145 255 / 0.10) !important;
+    background-color: rgb(255 176 122 / 0.10) !important;
 }
 
 html.dark:not([data-theme="custom"]) :is(.app-sidebar, .mobile-sidebar-sheet) .menu-search kbd {
-    border-color: rgb(163 145 255 / 0.18) !important;
+    border-color: rgb(255 176 122 / 0.18) !important;
 }
 
 /* Group dividers use the lavender sidebar edge: the neutral hairline looks olive on the purple-black sidebar. */
 html.dark:not([data-theme="custom"]) :is(.app-sidebar, .mobile-sidebar-sheet) .sidebar-nav :is([class~="dark:border-white/[0.06]"], [class~="dark:border-white/[0.07]"], [class~="dark:border-white/[0.08]"]) {
-    border-color: rgb(163 145 255 / 0.10) !important;
+    border-color: rgb(255 176 122 / 0.10) !important;
 }
 
 /* Admin keeps the neutral tile unless it is the current page. */
 html.dark:not([data-theme="custom"]):where(:not([data-nav-items="flat"])) :is(.app-sidebar, .mobile-sidebar-sheet) :is(.menu-item, .menu-subitem):not(.sidebar-toggle):not(.menu-search):not(.nav-admin):not(.menu-item-active):not(.menu-subitem-active) .menu-item-icon,
 html.dark:not([data-theme="custom"]):where(:not([data-nav-items="flat"])) .app-sidebar nav.sidebar-collapsed .menu-search.menu-item .menu-item-icon {
-    border-color: rgb(163 145 255 / 0.13);
-    background: rgb(107 22 237 / 0.07);
+    border-color: rgb(255 176 122 / 0.13);
+    background: rgb(255 122 26 / 0.07);
     color: #b9adff;
 }
 
 html.dark:not([data-theme="custom"]) :is(.app-sidebar, .mobile-sidebar-sheet) nav:not(.sidebar-collapsed) .nav-section {
-    color: rgb(163 145 255 / 0.55);
+    color: rgb(255 176 122 / 0.55);
 }
 
 /* Sidebar account menu: the purple tint of the sidebar it opens from. */
 html.dark:not([data-theme="custom"]) .listbox-panel.top-user-menu-panel-sidebar {
     background: color-mix(in oklab, #ff7a1a 10%, var(--coollabs-elevated));
-    border-color: rgb(163 145 255 / 0.22);
+    border-color: rgb(255 176 122 / 0.22);
 }
 
 html.dark:not([data-theme="custom"]) .top-user-menu-panel-sidebar .listbox-option:hover {
-    background: rgb(163 145 255 / 0.10);
+    background: rgb(255 176 122 / 0.10);
 }
 
 /* Custom theme sidebar. These rules come after the dark sidebar rules above, so they win. */
